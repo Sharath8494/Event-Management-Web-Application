@@ -1,0 +1,20 @@
+﻿
+body {
+}
+
+#ratinglist input[type="radio"] {
+    display: none;
+}
+
+#ratinglist label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('image/star-empty.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+#ratinglist input[type="radio"]:checked + label {
+    background-image: url('image/star-outline-filled.png');
+}

@@ -1,0 +1,46 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    background: #808080;
+}
+
+.slider {
+    width: 1000px;
+    height: 650px;
+    background-image: url('img/wed4.jpg');
+    margin: 100px auto;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url('img/wed4.jpg');
+    }
+
+    25% {
+        background-image: url('img/wed2.jpg');
+    }
+
+    40% {
+        background-image: url('img/rahul.jpg');
+    }
+
+    50% {
+        background-image: url('img/bt1.jpg');
+    }
+    65% {
+        background-image: url('img/bt3.jpg');
+    }
+
+    75% {
+        background-image: url('img/wed3.jpg');
+    }
+
+    90% {
+        background-image: url('img/bt2.jpg');
+    }
+
+    100% {
+        background-image: url('img/virat.jpg');
+    }
+}

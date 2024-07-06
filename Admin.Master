@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Eve_managent.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="bootstrap/css.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+                   <div class="row">
+    <div class="col-3">
+        <asp:Panel ID="Panel1" runat="server" BorderStyle="Solid" BorderColor="#996633" BackImageUrl="~/img/bg1.jpg" Height="900px">
+         
+         <div class="row">
+        <div class="col">
+       
+        <center>
+         <b style="color: #FFFFFF; font-size: xx-large;">Welcome To Admin</b><br />
+            <img src="Images/home.png" width="100" height="100" />
+        
+        <hr />
+         </center>
+        </div>
+        </div>
+         <br />
+        
+        <div class="row">
+        <div class="col">
+        <center>
+           
+            <asp:Button ID="Button1" class=" btn btn-info"  runat="server" Text="Manage Event"  Font-Bold="True" height="50" Width="250" OnClick="Button1_Click" />
+         </center>
+        </div>
+        </div>
+         <br />
+         <div class="row">
+        <div class="col">
+        <center>
+           
+          <asp:Button ID="Button2" class=" btn btn-info"  runat="server" Text=" Manage venue"  Font-Bold="True" height="50" Width="250" OnClick="Button2_Click"  />
+         </center>
+        </div>
+        </div>
+         <br />
+         <div class="row">
+        <div class="col">
+        <center>
+           
+
+         <asp:Button ID="Button3" class=" btn btn-info"  runat="server" Text="Manage Food"  Font-Bold="True" height="50" Width="250" OnClick="Button3_Click" />
+         </center>
+        </div>
+        </div>
+         <br />
+         <div class="row">
+        <div class="col">
+        <center>
+           
+         <asp:Button ID="Button4" class=" btn btn-info"  runat="server" Text="Manage Decoration"  Font-Bold="True" height="50" Width="250" OnClick="Button4_Click" />
+         </center>
+        </div>
+        </div>
+        <br />
+         <div class="row">
+        <div class="col">
+        <center>
+            
+         <asp:Button ID="Button5" class=" btn btn-info"  runat="server" Text="view"  Font-Bold="True" height="50" Width="250" OnClick="Button5_Click" />
+         </center>
+        </div>
+        </div>
+        <br />
+         <div class="row">
+        <div class="col">
+        <center>
+           
+         <asp:Button ID="Button6" class="btn btn-info"  runat="server" Text="view Feedback"  Font-Bold="True" height="50" Width="250" OnClick="Button6_Click" />
+         </center>
+        </div>
+        </div>
+        <br />
+             <div class="row">
+        <div class="col">
+        <center>
+            <asp:Button ID="Button8" class="btn btn-info" runat="server" Text="Profit" Font-Bold="True" height="50" Width="250" OnClick="Button8_Click"/>
+            </center>
+        </div>
+        </div>
+            <br />
+            <div class="row">
+        <div class="col">
+            <center>
+            <asp:Button ID="Button9" class=" btn btn-info" runat="server" Text="Report" Font-Bold="True" height="50" Width="250" OnClick="Button9_Click" />
+                </center>
+        </div>
+        </div>
+        <br />
+             <div class="row">
+        <div class="col">
+        <center>
+           
+         <asp:Button ID="Button7" class=" btn btn-danger"  runat="server" Text="Logout"  Font-Bold="True" height="50" Width="250" OnClick="Button7_Click" />
+         </center>
+        </div>
+        </div>
+        <br />
+              
+</asp:Panel>
+    </div>
+    <div class="col-9">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+               </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Custemer.master.cs" Inherits="Eve_managent.Custemer" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="bootstrap/css.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div class="row">
+    <div class="col-3">
+        <asp:Panel ID="Panel1" runat="server" BorderStyle="Solid" BorderColor="#996633" BackImageUrl="~/img/bg1.jpg" Height="900px">
+         <div class="row">
+        <div class="col">
+       
+        <center>
+         <b style="color: #FFFFFF; font-size: xx-large;">Welcome To Customer Dashboard</b><br />
+            <img src="Images/home.png" width="100" height="100" />
+        
+        <hr style="color: #FF0000" />
+         </center>
+        </div>
+        </div>
+         <br />
+            <div class="row">
+        <div class="col">
+        <center>
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/debit-card.png" height="50px" width="50px"/>
+          
+         <asp:Button ID="Button7" class=" btn btn-info"  runat="server" Text="Event View"  Font-Bold="True" height="50" Width="250" OnClick="Button7_Click" />
+         </center>
+        </div>
+        </div>
+        <br />
+        
+        <div class="row">
+        <div class="col">
+        <center>
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/pencil.png" height="50px" width="50px"/>
+            
+            <asp:Button ID="Button1" class=" btn btn-info"  runat="server" Text="Edit Profile"  Font-Bold="True" height="50" Width="250" OnClick="Button1_Click" />
+         </center>
+        </div>
+        </div>
+         <br />
+         <div class="row">
+        <div class="col">
+        <center>
+            <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/booking.png" height="50px" width="50px"/>
+            
+          <asp:Button ID="Button2" class=" btn btn-info"  runat="server" Text=" Event Booking"  Font-Bold="True" height="50" Width="250" OnClick="Button2_Click"  />
+         </center>
+        </div>
+        </div>
+         <br />
+         <div class="row">
+        <div class="col">
+        <center>
+            <asp:Image ID="Image4" runat="server" ImageUrl="~/Images/book.png" height="50px" width="50px"/>
+           
+
+         <asp:Button ID="Button3" class=" btn btn-info"  runat="server" Text="View"  Font-Bold="True" height="50" Width="250" OnClick="Button3_Click" />
+         </center>
+        </div>
+        </div>
+         <br />
+         <div class="row">
+        <div class="col">
+        <center>
+            <asp:Image ID="Image5" runat="server" ImageUrl="~/Images/feedback.png" height="50px" width="50px"/>
+           
+         <asp:Button ID="Button5" class=" btn btn-info"  runat="server" Text="Feedback"  Font-Bold="True" height="50" Width="250" OnClick="Button5_Click" />
+         </center>
+        </div>
+        </div>
+        <br />
+         <div class="row">
+        <div class="col">
+        <center>
+            <asp:Image ID="Image6" runat="server" ImageUrl="~/Images/arrow.png" height="50px" width="50px"/>
+            
+         <asp:Button ID="Button6" class=" btn btn-danger"  runat="server" Text="Logout"  Font-Bold="True" height="50" Width="250" OnClick="Button6_Click" />
+         </center>
+        </div>
+        </div>
+        <br />
+</asp:Panel>
+    </div>
+  <div class="col-9">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+</body>
+</html>
